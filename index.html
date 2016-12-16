@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Psychology Quiz App</title>
+	<link rel="stylesheet" href="quiz2.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+	<nav>
+		<h1>Psychology Quiz</h1><div class="startover hidden"><span>Start Over</span></div>
+	</nav>
+
+
+
+	<div class="container">
+		<div class="introduction" id="introduction">
+			<p>Test your knowledge of Psychology! You will be asked 5 questions. Once you've made your selection, press "Submit" to confirm your selection. To start over, press the "Start Over" button.</p>
+			<p>To start, click the "Start" button.</p>
+			<button type="start" id="startbutton" class="">Start</button>
+		</div>
+	
+<!-- Question box including question, answers, and nav buttons -->
+	<div class="questionbox">
+		<form class="questionform">
+			<h3 id="questionheader" class="hidden">Question <span id="questionnumbertitle">1</span> of 5</h3>
+			<p class='question'></p>
+			<div id='answers' class=''></div>
+
+
+			<button id="qsubmit" type="submit" class="hidden">Submit</button><button id="cont" class="hidden">Continue</button>
+			
+		</form>
+	</div>
+
+
+
+
+<!-- Correct and Incorrect exclaimations -->
+<h2 id="correctindicator" class='hidden'>Correct!</h2> <h2 id="incorrectindicator" class="hidden">Incorrect!</h2>
+
+<!-- Score -->
+<p id='scoretext' class="hidden">You have answered <span id='score'>0</span> correctly of <span id="questionnumbercounter">0</span></p>
+
+<p id='congratz'></p>
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="quiz2.js"></script>
+</body>
+</html>
