@@ -37,7 +37,7 @@ var state = {
 //Starting quiz, displaying questions
 function showQuestion(state, questionNumber) {
 	if (questionNumber > 4) {
-		$(".questionbox, #correctindicator, #incorrectindicator, #scoretext").addClass('hidden');
+		$(".questionbox, #correctindicator, #incorrectindicator, #scoretext, #questionheader").addClass('hidden');
 		if (state.score < 3) {
 			$('#congratz').text("Whoops! Maybe you don't know as much as you think you do. Try again?");
 		}
@@ -55,7 +55,7 @@ function showQuestion(state, questionNumber) {
 	$('.question').html(question);
 	var html = '<ul class="nodots">';
 	for (var i = 0; i < answers.length; i++) {
-		html += '<li><input type="radio" name="a" required>' + answers[i] + '</li>';
+		html += '<li><input id="option" type="radio" name="a" required><label for="option"><span><span></span></span>' + answers[i] + '</label></li>';
 	}
 	html += '</ul>';
 	$('#answers').html(html);
@@ -104,7 +104,7 @@ function updateScore(state, score) {
 $('#startbutton').click(function(event) {
 	showQuestion(state, 0);
 	$('.startover, #qsubmit, #questionheader, #scoretext').removeClass('hidden');
-	$('#introduction').addClass('hidden');
+	$('#introduction, .welcome').addClass('hidden');
 	
 });
 
