@@ -20,12 +20,12 @@ var state = {
 			correct: "Negatively reinforced"
 		},
 		{
-			text: "Sally likes to eat chocolate. When she sees a candy store in the mall, she asks her mom if she can go get chocolate. Her mother reponds saying that they can go get chocolate. If this situation, what is the antecedent?",
+			text: "Sally likes to eat chocolate. When she sees a candy store in the mall, she asks her mom if she can go get chocolate. Her mother reponds saying that they can go get chocolate. In this situation, what is the antecedent?",
 			answers: ["The presence of the candy store", "Asking her mother for chocolate", "The chocolate", "Going to the mall"],
 			correct: "The presence of the candy store"
 		},
 		{
-			text: "When Timmy hits his sister, his mother scolds him, giving him a long talk about hitting. After the scolding, his mother ignores him for most of the day. Then, when he hits his sister again, his mother scolds him. What would most likely be the primary function of Timmy hitting his mother?",
+			text: "When Timmy hits his sister, his mother scolds him, giving him a long talk about hitting. After the scolding, his mother ignores him for most of the day. Then, when he hits his sister again, his mother scolds him. What would most likely be the primary function of Timmy hitting his sister?",
 			answers: ["Seeking access to materials", "Sensory stimulation", "Escape", "Attention"],
 			correct: "Attention"
 		}
